@@ -8,7 +8,7 @@ const NEXT_PUBLIC_GOOGLE_TAG_MANAGER =
   process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER;
 
 export const metadata = {
-  metadataBase: new URL("https://eventplanner.com"),
+  metadataBase: new URL("https://www.eventplanner.com"),
   title: "Event Planner",
   description: "Generated for Event Planner",
   viewport: "width=device-width, initial-scale=1.0",
