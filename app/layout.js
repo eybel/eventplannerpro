@@ -1,6 +1,5 @@
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import { Fragment } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +18,22 @@ export const metadata = {
     type: "website",
     url: "http://localhost:3000",
     image: "eventplanner-url",
+    siteName: "EventPlanner Pro",
+    images: [
+      {
+        url: "https://nextjs.org/og.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://nextjs.org/og-alt.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
   twitterGraph: {
     title: "Your Page Title",
