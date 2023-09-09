@@ -1,10 +1,11 @@
+"use client";
+
 import Blog from "@/components/home/Blog";
 import Hero from "@/components/home/Hero";
 import Motivation from "@/components/home/Motivation";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import ProductsSchema from "@/components/schema";
-import Image from "next/image";
 
 export default function Home() {
   return (

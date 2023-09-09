@@ -1,4 +1,17 @@
+import { useState } from "react";
+import Popup from "../popup";
+
 export default function Hero() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <section id="hero" className="relative">
       <div className="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
@@ -16,8 +29,14 @@ export default function Hero() {
               bibendum vel ex quis, congue posuere ex. In eget lectus nec libero
               bibendum egestas.
             </p>
-            <button className="bg-primary-lime-green px-7 py-3 rounded-full text-neutral-white text-xs bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan hover:button-brightness mb-7 focus:outline-none focus:ring ring-green-400">
-              Request a Booking with Event Planner Pro
+
+            <Popup isOpen={isPopupOpen} onClose={closePopup} />
+
+            <button
+              onClick={openPopup}
+              className="bg-primary-lime-green px-7 py-3 rounded-full text-neutral-white text-xs bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan hover:button-brightness mb-7 focus:outline-none focus:ring ring-green-400"
+            >
+              CLICK to Request a Booking with Event Planner Pro
             </button>
           </div>
         </div>
