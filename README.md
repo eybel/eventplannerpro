@@ -27,4 +27,6 @@ This webapp retrieves HTML code ready to be crawled by google, It can be deploy 
 
 It comes with image optimization which is an amazing feature.
 
+SITEMAP: /sitemap.xml
+
 Abel Murua.
