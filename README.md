@@ -2,12 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+node >18
+
 First, run the development server:
 
-1. npm install or yarn install
-2. make sure you have a .env file and provide the data put in .env-sample
+1. nvm use (to select right node version)
+2. npm install or yarn install
+3. make sure you have a .env file and provide the data put in .env-sample
 
-3.
+4.
 
 ```bash
 npm run dev
